@@ -24,40 +24,52 @@ This is a Laravel-based ecommerce application using Livewire where users can vie
    git clone https://github.com/phi-rakib/laravel-livewire-stripe-ecommerce.git
    cd laravel-livewire-ecommerce
    ```
+
 2. **Install dependencies**:
    ```bash
    composer install
    npm install
-   npm run dev
    ```
+
 3. **Copy the .env file**:
-cp .env.example .env
+   ```bash
+   cp .env.example .env
+   ```
+
 4. **Set up your environment variables in the .env file**:
-APP_NAME=Laravel
-APP_ENV=local
-APP_KEY=base64:randomkeyhere
-APP_DEBUG=true
-APP_URL=http://localhost
+   ```bash
+   APP_NAME=Laravel
+   APP_ENV=local
+   APP_KEY=base64:randomkeyhere
+   APP_DEBUG=true
+   APP_URL=http://localhost
 
-DB_CONNECTION=mysql
-DB_HOST=127.0.0.1
-DB_PORT=3306
-DB_DATABASE=your_database
-DB_USERNAME=your_username
-DB_PASSWORD=your_password
+   DB_CONNECTION=mysql
+   DB_HOST=127.0.0.1
+   DB_PORT=3306
+   DB_DATABASE=your_database
+   DB_USERNAME=your_username
+   DB_PASSWORD=your_password
 
-STRIPE_KEY=your_stripe_key
-STRIPE_SECRET=your_stripe_secret
+   STRIPE_KEY=your_stripe_key
+   STRIPE_SECRET=your_stripe_secret
+   ```
 
 5. **Run migrations and seed the database**:
-php artisan migrate
-php artisan db:seed
+   ```bash
+   php artisan migrate
+   php artisan db:seed
+   ```
 
 6. **Serve the application**:
-php artisan serve
+   ```bash
+   php artisan serve
+   ```
 
 7. **Access the application in your web browser**:
-http://localhost:8000
+   ```bash
+   http://localhost:8000
+   ```
 
 ## Usage
 - View Products: Navigate to the home page to view all products.
